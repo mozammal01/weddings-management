@@ -1,19 +1,17 @@
-// import bannerImg from '../../assets/weddingBanner.jpg'
+import Navber from "../shared/Navber";
 
 const Home = () => {
   return (
-    <div className="min-h-96 text-center bg-[url('/../../assets/weddingBanner3.png')] bg-cover bg-center"
-    // style={{
-    //   backgroundImage: ""
-    // }}
+    <div className="min-h-screen text-center  bg-cover bg-center"
+      style={{
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('src/assets/weddingBanner.jpg')"
+      }}
     >
-      <h1 className="text-3xl ">Your Free Wedding Manager App</h1>
-      <button className="btn">Plan Your Wedding</button>
-      {/* <img src={bannerImg} alt="" /> */}
+      <Navber></Navber>
+      <h1 className="text-5xl pt-48 font-bold">Your Free Wedding Manager App</h1>
+      <button className="btn my-5 text-white bg-pink-500">Plan Your Wedding</button>
     </div>
   );
 };
 
 export default Home;
-
-//  className="bg-[url('../../assets/Wedding-banner.jpg')] bg-cover "

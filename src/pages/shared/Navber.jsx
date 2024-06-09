@@ -1,6 +1,22 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+import navImg from '../../assets/logo-black-1.png'
 
 const Navber = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+
+    logOut()
+      .then(result => {
+        console.log(result);
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  }
 
   const NavLinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
@@ -9,7 +25,7 @@ const Navber = () => {
   </>
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar max-w-6xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,16 +35,22 @@ const Navber = () => {
             {NavLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <img  className="" src={navImg} width={200} alt="" />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-8">
           {NavLinks}
         </ul>
       </div>
-      <div className="navbar-end">
-        <Link className="btn" to="/login">Login</Link>
-      </div>
+      {user ?
+        <div className="navbar-end">
+          <a className="btn bg-pink-500 text-white" onClick={handleSignOut}>logOut</a>
+        </div>
+        :
+        <div className="navbar-end">
+          <Link className="btn bg-pink-500 text-white" to="/login">Login</Link>
+        </div>
+      }
     </div>
   );
 };
