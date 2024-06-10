@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
   const {id, name, image, price, shortDescription, button } = service;
   return (
-    <div onClick={id} className="card w-96 bg-base-100 shadow-xl">
-      <figure><img src={image}alt=""/></figure>
+    <Link to={`/services/${id}`}>
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <figure><img className='min-h-72' src={image}alt=""/></figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
         <p>{shortDescription}</p>
@@ -14,6 +16,7 @@ const Service = ({ service }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
