@@ -1,0 +1,57 @@
+
+[
+  {
+    "id": "1",
+    "name": "Venue Decoration",
+    "image": "https://res.cloudinary.com/mozammal01/image/upload/v1718021863/venue-decoration_znbh7l.jpg",
+    "price": 1500.00,
+    "shortDescription": "Elegant and customizable venue decoration to match your wedding theme.",
+    "longDescription": "Transform your wedding venue into a breathtaking wonderland with our premium Venue Decoration service. Our team of experienced designers and decorators will work closely with you to create a personalized and enchanting atmosphere that perfectly reflects your vision and style. Whether you dream of a classic, romantic setting with elegant drapery and floral arrangements, a modern and chic ambiance with sleek lines and contemporary accents, or a whimsical, fairy-tale landscape with twinkling lights and lush greenery, we have the expertise to bring your ideas to life.",
+    "button": "Book Now"
+  },
+  {
+    "id": "2",
+    "name": "Catering Service",
+    "image": "https://res.cloudinary.com/mozammal01/image/upload/v1718021863/catering-services_dgkpej.webp",
+    "price": 3000.00,
+    "shortDescription": "Gourmet catering service offering a variety of menu options for your special day.",
+    "longDescription": "Elevate your wedding celebration with our exceptional Catering Service, designed to delight your guests with exquisite flavors and impeccable presentation. Our team of culinary experts is dedicated to crafting a memorable dining experience that perfectly complements the elegance and significance of your special day. From intimate gatherings to grand receptions, we offer a diverse range of menu options to suit any wedding style and guest list.",
+    "button": "Order Now"
+  },
+  {
+    "id": "3",
+    "name": "Photography Package",
+    "image": "https://res.cloudinary.com/mozammal01/image/upload/v1718021862/photography-package_ztnyyi.jpg",
+    "price": 2500.00,
+    "shortDescription": "Professional wedding photography package capturing all your precious moments.",
+    "longDescription": "Capture the magic and emotion of your wedding day with our comprehensive Photography Package. Our team of professional photographers is passionate about telling your unique love story through stunning and timeless images. We understand that your wedding is one of the most important days of your life, and we are dedicated to preserving every precious moment for you to cherish forever.",
+    "button": "View Portfolio"
+  },
+  {
+    "id": "4",
+    "name": "Live Band",
+    "image": "https://res.cloudinary.com/mozammal01/image/upload/v1718021862/live-band_zehboh.jpg",
+    "price": 2000.00,
+    "shortDescription": "Live music band to entertain your guests and make your wedding unforgettable.",
+    "longDescription": "Set the perfect mood for your wedding with our dynamic Live Band service. Our talented musicians specialize in creating an unforgettable atmosphere, providing a captivating soundtrack for every moment of your celebration. From the romantic ceremony to the lively reception, our live band will enhance your wedding with soulful melodies, energetic performances, and a diverse repertoire tailored to your tastes.",
+    "button": "Check Availability"
+  },
+  {
+    "id": "5",
+    "name": "Wedding Planner",
+    "image": "https://res.cloudinary.com/mozammal01/image/upload/v1718021862/wedding-planner_xjwllo.jpg",
+    "price": 4000.00,
+    "shortDescription": "Full-service wedding planning to ensure a seamless and stress-free experience.",
+    "longDescription": "Transform your wedding dreams into reality with our professional Wedding Planner service. Our experienced wedding planners are dedicated to creating a seamless, stress-free, and unforgettable experience from start to finish. With meticulous attention to detail and a passion for perfection, we will guide you through every step of the planning process, ensuring your special day is a true reflection of your love story.",
+    "button": "Contact Us"
+  },
+  {
+    "id": "6",
+    "name": "Makeup Artist",
+    "image": "https://res.cloudinary.com/mozammal01/image/upload/v1718021862/makeup-artist_ibgex3.jpg",
+    "price": 800.00,
+    "shortDescription": "Professional makeup artist to make you look stunning on your big day.",
+    "longDescription": "Enhance your natural beauty and feel radiant on your special day with our professional Makeup Artist service. Our skilled makeup artists specialize in bridal makeup, ensuring you look flawless and feel confident as you walk down the aisle. Using high-quality products and the latest techniques, we create a personalized look that complements your style and highlights your best features.",
+    "button": "Book Appointment"
+  }
+]

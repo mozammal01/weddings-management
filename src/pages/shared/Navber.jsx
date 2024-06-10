@@ -7,6 +7,7 @@ const Navber = () => {
 
   const { user, logOut } = useContext(AuthContext);
 
+  console.log(user);
   const handleSignOut = () => {
 
     logOut()
@@ -35,7 +36,7 @@ const Navber = () => {
             {NavLinks}
           </ul>
         </div>
-        <img  className="" src={navImg} width={200} alt="" />
+        <Link to='/'><img src={navImg} width={200} alt="" /></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-8">
@@ -44,6 +45,7 @@ const Navber = () => {
       </div>
       {user ?
         <div className="navbar-end">
+          <p className="mx-2">{user.email}</p>
           <a className="btn bg-pink-500 text-white" onClick={handleSignOut}>logOut</a>
         </div>
         :
