@@ -17,16 +17,20 @@ const Login = () => {
     console.log(email, password);
     signIn(email, password)
       .then(result => {
-        console.log(result.user);
+        console.log(result);
+        const loginSuccess = document.getElementById('login-success')
+        loginSuccess.style.display = 'block';
       })
       .catch(error => {
         console.error(error);
+        const loginError = document.getElementById('login-error')
+        loginError.style.display = 'block'
       })
   }
 
   return (
     <>
-    <Navber></Navber>
+      <Navber></Navber>
       <div className="py-10 bg-base-200">
         <div className="">
 
@@ -51,6 +55,17 @@ const Login = () => {
                 <button className="btn btn-primary">Login</button>
                 <p className="text-center mt-2">Dont have an Account ? <span className="text-red-600 font-bold"><Link to='/register'>Register</Link></span></p>
               </div>
+
+              {/* Success Toast */}
+              <div role="alert" id="login-success" className="alert alert-success text-center hidden">
+                <span>Login Successfull</span>
+              </div>
+
+              {/* Error Toast */}
+              <div role="alert" id="login-error" className="alert alert-error text-center hidden">
+                <span>There is a Error here</span>
+              </div>
+
             </form>
           </div>
         </div>
